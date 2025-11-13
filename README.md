@@ -16,17 +16,6 @@
 - `experiments/results/latency_summary.png` — latency chart from experiments  
 - `deliverables/alerts_annotated.csv` — top 10 annotated alerts (human-friendly explanations)
 
-## Screenshots
-
-**Streamlit triage dashboard**  
-![Streamlit Dashboard](deliverables/screenshots/streamlit_dashboard.png)
-
-**Latency comparison (order-flow simulator)**  
-![Latency summary](deliverables/screenshots/latency_summary.png)
-
-**Sample annotated alerts (deliverables/alerts_annotated.csv)**  
-![Annotated alerts sample](deliverables/screenshots/annotated_alerts.png)
-
 
 ## Quickstart (local)
 1. Create & activate a Python venv.  
