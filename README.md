@@ -1,4 +1,8 @@
 # Market Surveillance — Real-time Trade/Order Anomaly Detector (Demo)
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/streamlit-demo-orange.svg)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
+
 
 **One-line:** Prototype that ingests minute-level BSE intraday bars → hybrid detector (rule + ML) → explainable alerts + triage dashboard.
 
@@ -12,6 +16,18 @@
 - `experiments/results/latency_summary.png` — latency chart from experiments  
 - `deliverables/alerts_annotated.csv` — top 10 annotated alerts (human-friendly explanations)
 
+## Screenshots
+
+**Streamlit triage dashboard**  
+![Streamlit Dashboard](deliverables/screenshots/streamlit_dashboard.png)
+
+**Latency comparison (order-flow simulator)**  
+![Latency summary](deliverables/screenshots/latency_summary.png)
+
+**Sample annotated alerts (deliverables/alerts_annotated.csv)**  
+![Annotated alerts sample](deliverables/screenshots/annotated_alerts.png)
+
+
 ## Quickstart (local)
 1. Create & activate a Python venv.  
 2. `pip install -r requirements.txt` (or `pip install numpy pandas scikit-learn streamlit matplotlib yfinance python-dateutil`)  
@@ -22,7 +38,21 @@
 7. `streamlit run dashboard/app.py`  # open dashboard at http://localhost:8501  
 8. `python experiments/orderflow_sim.py` and run `experiments/plot_latency.py` to produce latency chart
 
-## Results (your local run)
+### How to run (quick)
+```bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# mac / linux
+# source venv/bin/activate
+pip install -r requirements.txt
+python data_fetch.py
+python sim/producer.py
+python processing/processor.py
+python tools/annotate_alerts.py
+streamlit run dashboard/app.py
+
+## Results 
 - Clean rows processed: **1861**  
 - Alerts generated: **224**  
 - Average per-alert processing latency: **30.06 ms**  
