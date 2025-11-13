@@ -1,0 +1,11 @@
+alert_ts,event_ts,price,volume,alert_type,score,explanation,proc_latency_ms,annotation
+2025-11-13T17:14:35.048019,2025-11-13 09:53:00+00:00,3104.949951171875,2376.0,ANOMALY,1.0,rule_vol_z=3.41;iso_score=-0.049,34.01,Large sudden volume spike detected
+2025-11-13T17:14:34.981725,2025-11-13 09:52:00+00:00,3103.89990234375,2098.0,ANOMALY,0.4,iso_score=-0.043,34.02,Model-based unusual price-volume pattern detected
+2025-11-13T17:14:34.925739,2025-11-13 09:51:00+00:00,3103.449951171875,7128.0,ANOMALY,1.0,rule_vol_z=11.28;iso_score=-0.094,25.0,Large sudden volume spike detected
+2025-11-13T17:14:34.866797,2025-11-13 09:50:00+00:00,3108.5,9805.0,ANOMALY,1.0,rule_vol_z=15.71;iso_score=-0.094,31.04,Large sudden volume spike detected
+2025-11-13T17:14:34.802986,2025-11-13 09:49:00+00:00,3104.10009765625,1326.0,ANOMALY,0.4,iso_score=-0.024,31.04,Model-based unusual price-volume pattern detected
+2025-11-13T17:14:34.745748,2025-11-13 09:48:00+00:00,3106.300048828125,16565.0,ANOMALY,1.0,rule_vol_z=26.91;iso_score=-0.094,21.03,Large sudden volume spike detected
+2025-11-13T17:14:34.696629,2025-11-13 09:47:00+00:00,3104.35009765625,30626.0,ANOMALY,1.0,rule_vol_z=50.20;iso_score=-0.094,21.04,Large sudden volume spike detected
+2025-11-13T17:14:34.646359,2025-11-13 09:46:00+00:00,3114.25,12703.0,ANOMALY,1.0,rule_vol_z=20.51;iso_score=-0.094,34.03,Large sudden volume spike detected
+2025-11-13T17:14:34.586723,2025-11-13 09:45:00+00:00,3113.300048828125,21396.0,ANOMALY,1.0,rule_vol_z=34.91;iso_score=-0.094,37.03,Large sudden volume spike detected
+2025-11-13T17:14:34.523381,2025-11-13 09:44:00+00:00,3106.5,19057.0,ANOMALY,1.0,rule_vol_z=31.04;iso_score=-0.094,37.03,Large sudden volume spike detected
