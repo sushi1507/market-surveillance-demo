@@ -38,19 +38,7 @@
 7. `streamlit run dashboard/app.py`  # open dashboard at http://localhost:8501  
 8. `python experiments/orderflow_sim.py` and run `experiments/plot_latency.py` to produce latency chart
 
-### How to run (quick)
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# mac / linux
-# source venv/bin/activate
-pip install -r requirements.txt
-python data_fetch.py
-python sim/producer.py
-python processing/processor.py
-python tools/annotate_alerts.py
-streamlit run dashboard/app.py
+
 
 ## Results 
 - Clean rows processed: **1861**  
@@ -67,3 +55,17 @@ streamlit run dashboard/app.py
 
 ## Notes & next steps for production
 - For production, ingest exchange tick feed (paid/participant feed), use Kafka/Redis for throughput, deploy models in a low-latency model serving stack, and integrate with a SIEM for alert escalation.
+
+### How to run (quick)
+```bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# mac / linux
+# source venv/bin/activate
+pip install -r requirements.txt
+python data_fetch.py
+python sim/producer.py
+python processing/processor.py
+python tools/annotate_alerts.py
+streamlit run dashboard/app.py
